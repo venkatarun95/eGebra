@@ -1,1 +1,0 @@
-This version is the first attempt. It uses baseHTTPServer, is unstable and crashes a lot. A later version should use django with a proper databse to manage multiple clients.
