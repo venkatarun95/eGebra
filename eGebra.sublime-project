@@ -2,7 +2,7 @@
 	"folders":
 	[
 		{
-			"path": "/home/venkat/Documents/Projects/eGebra",
+			"path": "./",
 			"file_exclude_patterns": ["*.pyc", "*~", "*sublime*", "*.tar.gz"]
 		}
 	],

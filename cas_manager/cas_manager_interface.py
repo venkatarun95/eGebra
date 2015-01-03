@@ -9,11 +9,11 @@ def initialize(compScheduler):
 	global computationScheduler
 	computationScheduler = compScheduler
 
-def createSymbolicObject(symString, strType):
+def createSymbolicObject(symString, strType, dstNotebookId):
 	assert(type(symString) is str)
 	assert(type(strType) is str)
 	symObj = cas_manager.symbolic_object.symbolicObject(symString, strType)
-	symbolic_object_list.addObject(symObj)
+	symbolic_object_list.addObject(symObj, dstNotebookId)
 	return symObj
 
 def pushComputation(keyStr, symObjKeys, priority=0):

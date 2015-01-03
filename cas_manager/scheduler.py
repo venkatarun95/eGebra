@@ -15,7 +15,11 @@ class scheduler(threading.Thread):
 	def run(self, ):
 		while True:
 			task = self.pendingComputations.get()
-			res = cas_manager.compute.compute(task[1], task[2])
+			try:
+				res = cas_manager.compute.compute(task[1], task[2])
+			except:
+				print("Exception encountered in executing task ("+task+"). Skipping it.")
+				self.pendingResults.put((task, []))
 			#print "scheduler.py:scheduler:run :- Result of computation:- "
 			#print res
 			self.pendingResults.put((task, res))
