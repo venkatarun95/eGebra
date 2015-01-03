@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/venkat/Documents/Projects/eGebra",
+			"file_exclude_patterns": ["*.pyc", "*~", "*sublime*", "*.tar.gz"]
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4
+	},
+	"build_systems":
+	[
+		{
+			"cmd": ["python", "compute.py"]		
+		}
+	]
+}
